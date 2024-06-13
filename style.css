@@ -291,6 +291,7 @@ header .master_play .icon .bi:nth-child(3) {
     border-radius: 50%;
     padding: 1px 5px 0px 7px;
     margin: 0px 5px;
+    background: #36e2ec;
 }
 
 header .master_play span {
@@ -316,10 +317,10 @@ header .master_play .bar {
 header .master_play .bar .bar2 {
     position: absolute;
     background: #36e2ec;
-    width: 50%;
+    width: 0%;
     height: 100%;
     top: 0;
-    transition: 1s linear;
+    transition: 0s linear;
 }
 
 header .master_play .bar .dot {
@@ -329,7 +330,7 @@ header .master_play .bar .dot {
     border-radius: 50%;
     left: 0%;
     top: -1.5px;
-    transition: 1s linear;
+    transition: 0s linear;
 }
 
 header .master_play .bar .dot::before {
@@ -384,10 +385,10 @@ header .master_play .vol input {
 header .master_play .vol .vol_bar {
     position: absolute;
     background: #36e2ec;
-    width: 50%;
+    width: 100%;
     height: 100%;
     top: 0;
-    transition: 1s linear;
+    transition: 0s linear;
 }
 
 header .master_play .vol .dot {
@@ -395,9 +396,9 @@ header .master_play .vol .dot {
     width: 5px;
     height: 5px;background: #36e2ec;
     border-radius: 50%;
-    left: 0%;
+    left: 100%;
     top: -1.5px;
-    transition: 1s linear;
+    transition: 0s linear;
 }
 
 header .master_play .vol .dot::before {
@@ -411,6 +412,7 @@ header .master_play .vol .dot::before {
     top: -6.3px;
     box-shadow: inset 0px 0px 3px #36e2ec;
 }
+
 header .song_side {
     z-index: 2;
 }
@@ -706,7 +708,7 @@ header .song_side .popular_artists .item::-webkit-scrollbar {
 header .song_side .popular_artists .item li {
     list-style-type: none;
     position: relative;
-    width: 140px;
+    min-width: 140px;
     height: 140px;
     border-radius: 50%;
     margin-right: 20px;

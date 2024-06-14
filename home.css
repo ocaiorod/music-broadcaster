@@ -16,13 +16,17 @@ a {
     height: 80px;
     width: 100%;
     z-index: 100;
-    padding: 0 20px;
+    padding: 0 0;
 }
 
 .nav {
-    max-width: 1100px;
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 200px;
+    background: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 4px rgb(19, 19, 19);  
 }
 
 .nav,
@@ -34,7 +38,8 @@ a {
 }
 .nav_logo,
 .nav_link,
-.button {
+.button,
+.buttonLogin {
     color: #fff;
 }
 
@@ -47,10 +52,12 @@ a {
 }
 
 .nav_link:hover {
-    color: #fff
+    color: #ff690a;
+    transition: .3s ease-out;
+    font-weight: bold;
 }
 
-.button {
+.button, .buttonLogin {
     padding: 6px 24px;
     border: 2px solid #fff;
     background: transparent;
@@ -58,7 +65,8 @@ a {
     cursor: pointer;
 }
 
-.button:active {
+.button:active,
+.buttonLogin:active {
     transform: scale(0.98);
 }
 
@@ -225,12 +233,19 @@ a {
     cursor: pointer;
 }
 
-.form_container .button {
+.form_container .button, .buttonLogin {
     background: #ff690a;
     margin-top: 30px;
     width: 100%;
     padding: 10px 0;
     border-radius: 10px;
+    opacity: .2;
+    cursor: default;
+}
+
+.form_container .buttonLogin.active {
+    opacity: 1;
+    cursor: pointer;
 }
 
 .login_signup {

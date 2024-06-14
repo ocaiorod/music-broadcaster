@@ -285,7 +285,7 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e) => {
         });
 
             makeHighlight();
-            Array.from(document.getElementsByClassName('songItem'))[index - 1].style.color = "rgb(54, 226, 236)";
+            Array.from(document.getElementsByClassName('songItem'))[index - 1].style.color = "rgb(255, 105, 10)";
 
             makeItPlay();
             el.target.classList.add('bi-pause-circle-fill');
@@ -405,7 +405,7 @@ back.addEventListener('click', () => {
     });
 
         makeHighlight();
-        Array.from(document.getElementsByClassName('songItem'))[index - 1].style.color = "rgb(54, 226, 236)";
+        Array.from(document.getElementsByClassName('songItem'))[index - 1].style.color = "rgb(255, 105, 10)";
 
         makeItPlay();
         el.target.classList.add('bi-pause-circle-fill');

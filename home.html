@@ -36,12 +36,12 @@
                     <h2>Login</h2>
 
                     <div class="input_box">
-                        <input type="email" placeholder="Enter your email" required>
+                        <input id="loginEmail" type="email" placeholder="Enter your email" required>
                         <i class="uil uil-envelope-alt email"></i>
                     </div>
 
                     <div class="input_box">
-                        <input type="password" placeholder="Enter your password" required>
+                        <input id="loginPassword" type="password" placeholder="Enter your password" required>
                         <i class="uil uil-lock password"></i>
                         <i class="uil uil-eye-slash pw_hide"></i>
                     </div>
@@ -54,7 +54,7 @@
                         <a href="#" class="forgot_pw">Forgot password?</a>
                     </div>
     
-                        <button onclick="window.location.href='index.html'" class="button">Login Now</button>
+                        <button disabled onclick="window.location.href='index.html'" class="buttonLogin">Login Now</button>
     
                         <div class="login_signup">
                             Don't have an account? <a href="#" id="signup">Signup for free!</a>

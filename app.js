@@ -201,21 +201,21 @@ const songs = [
     },
     {
         id: "34",
-        songName: `Holiday<br>
-        <div class="subtitle">Green Day</div>`,
-        poster: "img/song_31.jpg"
+        songName: `YOUtopia<br>
+        <div class="subtitle">Bring Me the Horizon</div>`,
+        poster: "img/song_34.jpg"
     },
     {
         id: "35",
-        songName: `Holiday<br>
-        <div class="subtitle">Green Day</div>`,
-        poster: "img/song_31.jpg"
+        songName: `Therefore I Am<br>
+        <div class="subtitle">Billie Eilish</div>`,
+        poster: "img/song_35.jpg"
     },
     {
         id: "36",
-        songName: `Holiday<br>
-        <div class="subtitle">Green Day</div>`,
-        poster: "img/song_31.jpg"
+        songName: `FREAK<br>
+        <div class="subtitle">YUQI</div>`,
+        poster: "img/song_36.jpg"
     }
 ];
 
@@ -235,6 +235,7 @@ masterPlay.addEventListener('click', () => {
         wave.classList.add('active1');
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
+        
     } else {
         music.pause();
         wave.classList.remove('active1');
@@ -491,11 +492,6 @@ let playNewsButton = document.getElementById('playNewsButton');
 let NewSingle = document.getElementById('32')
 
 playNewsButton.addEventListener('click', (el) => {
-    playNewsButton.style.color ="rgb(11, 19, 32)"
-    playNewsButton.style.background ="rgb(255, 255, 255)"
-    playNewsButton.style.border ="rgb(255, 255, 255)"
-    playNewsButton.style.cursor = 'unset';
-    playNewsButton.innerHTML = "PLAYED";
 
     index = 32;
     music.src = `audio/a${index}.mp3`;
@@ -524,3 +520,15 @@ playNewsButton.addEventListener('click', (el) => {
         wave.classList.add('active1');
 
 })
+
+const Profile = document.querySelector(".user");
+const exitButton = document.querySelector("#menu_user");
+
+Profile.addEventListener("click", () => {
+    if (exitButton.style.display === "none" || exitButton.style.display === "") {
+        exitButton.style.display = "block";
+    } else {
+        exitButton.style.display = "none";
+    }
+});
+

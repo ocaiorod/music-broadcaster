@@ -39,7 +39,8 @@ a {
 .nav_logo,
 .nav_link,
 .button,
-.buttonLogin {
+.buttonLogin,
+.buttonRegister {
     color: #fff;
 }
 
@@ -57,7 +58,7 @@ a {
     font-weight: bold;
 }
 
-.button, .buttonLogin {
+.button, .buttonLogin, .buttonRegister {
     padding: 6px 24px;
     border: 2px solid #fff;
     background: transparent;
@@ -66,7 +67,8 @@ a {
 }
 
 .button:active,
-.buttonLogin:active {
+.buttonLogin:active,
+.buttonRegister:active {
     transform: scale(0.98);
 }
 
@@ -233,7 +235,7 @@ a {
     cursor: pointer;
 }
 
-.form_container .button, .buttonLogin {
+.form_container .button, .buttonLogin, .buttonRegister {
     background: #ff690a;
     margin-top: 30px;
     width: 100%;
@@ -243,7 +245,7 @@ a {
     cursor: default;
 }
 
-.form_container .buttonLogin.active {
+.form_container .buttonLogin.active, .buttonRegister.active {
     opacity: 1;
     cursor: pointer;
 }
